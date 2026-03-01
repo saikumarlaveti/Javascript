@@ -1,0 +1,38 @@
+<script>
+    let greet = (name)=>{
+        console.log('welcome ' + name)
+    }
+
+    greet('saikumar')
+    greet('santoshkumar')
+</script>
+
+<script>
+    let wish = (FullName,FirstName,LastName)=>{
+        console.log(FullName(),FirstName(),LastName())
+    }
+    wish(
+    ()=>{return 'Saikumar Laveti :FullName,';    },
+    ()=>{return 'Saikumar : FirstName,'},
+    ()=>{return 'Laveti :Last Name'}
+    )
+
+</script>
+
+<script>
+    let user =(id,name,age)=>{
+        // console.log(id,name,age);
+         console.log(id(),name(),age());
+    };
+    let id=()=>{return 3}
+    let name =()=>{return 'Saikumar Laveti'}
+    let age =()=>{return 26}
+
+    // console.log(id());
+    // console.log(name());
+    // console.log(age());
+
+    // console.log(id(),name(),age());
+
+    user(id,name,age)
+</script>
