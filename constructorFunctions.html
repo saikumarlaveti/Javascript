@@ -1,0 +1,41 @@
+<script>
+
+    function userDetails(){
+        this.id = 3;
+        this.name = 'saikumar';
+        this.age =26;
+    }
+
+    let obj1 = new userDetails();
+    console.log(obj1.id,obj1.name,obj1.age);
+
+    let obj2 = new userDetails();
+    console.log(obj2.id,obj2.name,obj2.age);
+
+
+    function studentDetails(){
+
+        this.name = 'Saikumar Laveti';
+
+         this.function_1 = function(){
+            return `Welcome to the javascript ${this.name}`;
+        }
+
+    }
+
+    let obj3 = new studentDetails;
+    console.log(obj3.name)  //Saikumar Laveti
+    console.log(obj3.function_1()); //Welcome to the javascript Saikumar Laveti
+
+
+
+    function Student(id,name,age){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    let std = new Student(1,'Saikumar',28);
+    console.log(std.id,std.name,std.age);
+    console.log(std);
+</script>

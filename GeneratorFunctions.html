@@ -1,0 +1,15 @@
+<script>
+
+    function *details(){
+
+        
+        yield "Saikumar Laveti";
+        yield "Javascript";
+        yield "Java";
+        yield "Data Structure";
+    }
+
+    let obj1 =  details();
+    console.log(obj1.next().value); //Saikumar Laveti
+    console.log(obj1.next().value); //Javascript
+</script>

@@ -1,0 +1,23 @@
+{
+  "Students": [
+    {
+      "Id": 1,
+      "Name": "Saikumar",
+      "course": "MCA",
+      "id": "nV0EXXLuhAA"
+    },
+    {
+      "Id": 2,
+      "Name": "Santosh",
+      "course": "MBA",
+      "id": "F7M-xmrTVno"
+    },
+    {
+      "Id": 3,
+      "Name": "Naresh",
+      "course": "Degree",
+      "id": "_IpYkEOqp2c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

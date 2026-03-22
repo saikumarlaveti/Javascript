@@ -1,0 +1,28 @@
+<!-- using var keyword i value overridden by next genetor value so it will print 5 5 5 5 5 -->
+<script>
+    for(var i = 1;i<=5;i++){
+        setTimeout(()=>{console.log(i);},5000);
+        
+    }
+</script>
+
+
+
+<!-- over come this problem we can use let keyword -->
+<!-- <script>
+    for(let i = 1;i<=5;i++){
+        setTimeout(()=>{console.log(i);},5000);
+        
+    }
+</script> -->
+
+
+<!-- over come above var keyword problem we can use this method also -->
+ <script>
+    for(var i = 1;i<=5;i++){
+        ((i)=>{
+        setTimeout(()=>{console.log(i);},5000);     
+            
+    })(i);
+    }
+</script>

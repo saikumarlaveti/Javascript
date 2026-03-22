@@ -36,3 +36,22 @@
 
     user(id,name,age)
 </script>
+
+
+<!--IIFE Functions-->
+
+<script>
+   let variable =  (()=>{return "Hello IIFE Functions"})()
+   console.log(variable);
+</script>
+
+<script>
+    function userdetails(id,name,age){
+        console.log(id+' ' + name + ' ' + age);
+    };
+
+   userdetails((()=>{return 1})(),
+   (()=>{return 'saikumar'})(),
+   (()=>{return 26})());
+
+</script>
