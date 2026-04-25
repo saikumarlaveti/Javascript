@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var margin = 50;
+            function Moveclick(){
+                margin += 50;
+                 document.getElementById("pic").style.marginLeft=margin+"px";
+            }
+
+            function Clearclick(){
+                document.getElementById("pic").style.marginLeft=1+"px";
+            }
+            var names = "";
+            function printName(){
+                names="";
+                var namesCheckboxes=document.getElementsByName("Name");
+                for(var checkedNames of namesCheckboxes){
+                    if(checkedNames.checked){
+                    names += checkedNames.value;
+                    }
+                }
+                document.querySelector("p").innerHTML=names;  
+            }          
+        </script>
+    </head>
+    <body>
+        <div>
+        <button onclick="Moveclick()">Move</button>
+        <button onclick="Clearclick()">Clear</button>
+        <img id="pic" src="Photo.jpg" width="500" height="700"/>
+        </div>
+
+        <div>
+            <h3>Names</h3>
+            <ul>
+                <div>
+                <li><input type="checkbox" name="Name" value="Saikumar">Saikumar</li>
+                <li><input type="checkbox" name="Name" value="Santosh">Santosh</li>
+                <button onclick="printName()">print</button>
+                <p></p>
+            </div>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -52,4 +52,4 @@ console.log([1,2,3,4,5,6].filter((element,index)=>{
     return element>3;
 }).map((element,index)=>{
     return element*100
-}))
+}))  //[ 400, 500, 600 ]
