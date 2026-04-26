@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            UserDetails={
+                "Name":"saikumar",
+                "password":"1234"
+            }
+            function verfiy(){
+              
+                var User_Name = document.getElementById("txtname").value;
+                console.log(User_Name);
+                var User_password = document.getElementById("txtpassword").value;
+                console.log(User_password);
+                var error = document.querySelector("p");
+                if(User_Name === UserDetails.Name){
+                    if(User_password === UserDetails.password){
+                        document.write("Login success");
+                    }
+                    else{
+                        error.innerHTML="Invalid Password".fontcolor('red');
+                    }
+                }
+                else{
+                    error.innerHTML="Invalid User Name".fontcolor('red');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <dl>
+            <dt>Name</dt>
+            <dd><input type="text" id="txtname"></dd>
+            <dt>Password</dt>
+            <dd><input type="text" id="txtpassword"></dd>
+            <button onclick="verfiy()">submit</button>
+            <p></p>
+        </dl>
+    </body>
+</html>
