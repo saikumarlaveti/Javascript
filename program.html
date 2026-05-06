@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function findRange(number,min,max){
+        if(number >= min && number <= max){
+            document.writeln(`your number ${number} is between ${min} and ${max} </br>`);
+        }
+        else{
+            document.writeln(`your number ${number} is out of range ${min} and ${max} </br>`);
+        }
+    }
+    findRange(50,1,10);
+</script>
+<script>
+    function evenOrOdd(number){
+        if(number%2==0){
+            document.write(`${number} is Even number </br>`)
+        }
+        else{
+            document.write(`${number} is Odd number </br>`)
+        }
+    }
+    evenOrOdd(2)
+    evenOrOdd(3)
+</script>
+<body>
+    
+    
+</body>
+</html>
